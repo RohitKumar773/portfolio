@@ -1,0 +1,286 @@
+body {
+    background-color: rgb(24, 24, 33);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(24, 24, 33);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    height: 80px;
+    float: left;
+    background-color: rgb(29, 29, 54);
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    padding: 22px;
+}
+
+.menu {
+    width: calc(100% - 20%);
+    height: 100%;
+    float: left;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.menu ul li {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: cambria;
+    margin-top: 18px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    color: rgb(149, 149, 255);
+}
+
+#container {
+    width: 100%;
+    height: 700px;
+    float: left;
+    margin-top: 80px;
+}
+
+.left_container {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 10%;
+}
+
+#text_1 {
+    color: white;
+    font-size: 55px;
+    font-family: 'Bangers', cursive;
+}
+
+#text_2 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Sansita', sans-serif;
+}
+
+#element {
+    color: rgb(90, 90, 228);
+}
+
+.right_container {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.right_container img {
+    width: 70%;
+    margin-left: 6%;
+    margin-top: 5%;
+    filter: brightness(1.1), contrast(22.55);
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.about_section {
+    width: 100%;
+    height: auto;
+    float: left;
+    border: 2px solid rgb(90, 90, 228);
+    border-radius: 10px;
+}
+
+.about_title {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 50px;
+}
+
+.about_content {
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    padding: 20px;
+    color: white;
+    word-spacing: 3px;
+}
+
+.service_area {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.service_title {
+    width: 100%;
+    height: 50px;
+    float: left;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+.service_card {
+    width: 95%;
+    height: auto;
+    padding: 12px;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin-left: 2.5%;
+    border: 2px solid rgb(90, 90, 228);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service_card a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact {
+    width: 100%;
+    height: 100px;
+    float: left;
+    color: white;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* media query start */
+
+@media(max-width:1260px) and (min-width:1000px) {
+    .logo {
+        width: 35%;
+    }
+
+    .menu {
+        width: calc(100% - 35%);
+    }
+
+    .left_container {
+        padding: 8%;
+        margin-top: 5%;
+    }
+
+    #text_1 {
+        font-size: 50px;
+    }
+
+    #text_2 {
+        font-size: 45px;
+    }
+
+    .right_container img {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .service_card {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:1000px) and (min-width:200px) {
+    .head {
+        height: 60px;
+    }
+
+    .logo {
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #container {
+        height: 600px;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    .left_container {
+        width: 100%;
+        height: 150px;
+    }
+
+    #text_1 {
+        font-size: 40px;
+    }
+
+    #text_2 {
+        font-size: 25px;
+    }
+
+    .right_container {
+        width: 100%;
+        height: calc(100% - 150px);
+    }
+
+    .right_container img {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .service_area {
+        height: auto;
+    }
+
+    .service_card {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 15px;
+    }
+}
